@@ -20,9 +20,13 @@ lightSwitch.addEventListener("click", () => {
   offLightBulb.classList.toggle("d-none");
   onLightBulb.classList.toggle("d-none");
 
-  if (lightSwitch.innerHTML.includes("ON")) {
-    lightSwitch.innerHTML = "OFF";
-  } else {
-    lightSwitch.innerHTML = "ON";
-  }
+  //   if (lightSwitch.innerHTML.includes("ON")) {
+  //     lightSwitch.innerHTML = "OFF";
+  //   } else {
+  //     lightSwitch.innerHTML = "ON";
+  //   }
+
+  lightSwitch.innerHTML.includes("ON")
+    ? (lightSwitch.innerHTML = "OFF")
+    : (lightSwitch.innerHTML = "ON");
 });
