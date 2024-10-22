@@ -29,6 +29,18 @@ li {
 .container {
   margin: 0 auto;
   padding: 0 10px;
-  width: 1000px;
+  width: 1300px;
   max-width: 100%;
+}
+
+.img-container {
+  margin: 50px;
+}
+
+.d-none {
+  display: none;
+}
+
+.h-flip {
+  transform: scaleX(-1);
 }
