@@ -8,6 +8,14 @@ const offLightBulb = document.getElementById("light-bulb-img");
 const onLightBulb = document.createElement("img");
 
 onLightBulb.src = "./img/yellow_lamp.png";
-onLightBulb.classList.add("h-flip");
+onLightBulb.classList.add("h-flip", "d-none");
 
-lightBulbContainer.append(onLightBulb);
+// # light bulb switch
+
+const lightSwitch = document.getElementById("light-bulb-switch");
+
+lightSwitch.addEventListener("click", () => {
+  lightBulbContainer.append(onLightBulb);
+  offLightBulb.classList.toggle("d-none");
+  onLightBulb.classList.toggle("d-none");
+});
