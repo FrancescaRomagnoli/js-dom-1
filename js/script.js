@@ -13,9 +13,16 @@ onLightBulb.classList.add("h-flip", "d-none");
 // # light bulb switch
 
 const lightSwitch = document.getElementById("light-bulb-switch");
+lightSwitch.innerHTML = "ON";
 
 lightSwitch.addEventListener("click", () => {
   lightBulbContainer.append(onLightBulb);
   offLightBulb.classList.toggle("d-none");
   onLightBulb.classList.toggle("d-none");
+
+  if (lightSwitch.innerHTML.includes("ON")) {
+    lightSwitch.innerHTML = "OFF";
+  } else {
+    lightSwitch.innerHTML = "ON";
+  }
 });

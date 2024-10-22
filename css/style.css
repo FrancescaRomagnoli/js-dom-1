@@ -44,3 +44,13 @@ li {
 .h-flip {
   transform: scaleX(-1);
 }
+
+/* # light switch */
+
+#light-bulb-switch {
+  padding: 10px 5px;
+  min-width: 40px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
